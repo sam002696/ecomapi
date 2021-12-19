@@ -12,7 +12,7 @@ const cors = require("cors");
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URL).then(() => console.log("db connection is successful")).catch((err) => {
+mongoose.connect("mongodb+srv://ecomuser:GLabMrQrSbnkzOwf@cluster0.yftux.mongodb.net/shop?retryWrites=true&w=majority").then(() => console.log("db connection is successful")).catch((err) => {
     console.log(err);
 });
 
